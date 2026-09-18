@@ -6,9 +6,8 @@ public:
         vector<int>ans(n);
         for(int i=n-1;i>=0;i--){
             ans[i] = maxi;
-            if(arr[i] > maxi){
-                maxi = max(maxi,arr[i]);
-            }
+            maxi = max(maxi,arr[i]);
+            
         }
         //ans[n-1] = -1;
         return ans;
