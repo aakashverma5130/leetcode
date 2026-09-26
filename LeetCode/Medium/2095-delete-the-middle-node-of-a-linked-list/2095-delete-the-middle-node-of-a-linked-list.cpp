@@ -16,13 +16,13 @@ public:
         }
         ListNode* temp = head;
         ListNode* prev = NULL;
-        int cnt = 0;
+        int count = 0;
         while(temp!=NULL){
-            cnt++;
+            count++;
             temp=temp->next;
         }
         temp = head;
-        for(int i=0;i<cnt/2;i++){
+        for(int i=0;i<count/2;i++){
             prev = temp;
             temp=temp->next;
         }
