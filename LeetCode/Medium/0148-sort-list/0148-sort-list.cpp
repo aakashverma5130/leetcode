@@ -25,6 +25,7 @@ public:
             temp = temp->next;
             i++;
         }
+        vector<int>().swap(arr);
         return head;
     }
 };
